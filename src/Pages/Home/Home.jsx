@@ -1,9 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Data from "../../Data/Data";
 import HomeCarosel from "../../Components/HomeCarosel";
 import SubTitle from "../../Components/SubTitle";
@@ -12,6 +10,7 @@ import Feature from "../../Data/FeaturesData";
 import Service from "../../Data/ServiceData";
 import Testmonial from "../../Data/TestimonialData";
 import { settings, settings2 } from "../../SliderSetings/SliderSetings";
+import { ImageViewer } from "react-image-viewer-dv";
 import HomeLanding from "./HomeLanding";
 
 function Home() {
@@ -145,7 +144,9 @@ function Home() {
             {Data.map((item, index) => {
               return (
                 <div class="col-sm-6 col-lg-4 mb-4" key={item.id}>
-                  <img src={item.image} alt="" class="img-fluid rounded-3" />
+                  <ImageViewer>
+                    <img src={item.image} alt="" class="img-fluid rounded-3" />
+                  </ImageViewer>
                 </div>
               );
             })}
