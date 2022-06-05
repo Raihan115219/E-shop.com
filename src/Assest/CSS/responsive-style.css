@@ -1,0 +1,54 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body,
+  html {
+    font-size: 7px;
+  }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* genarel css */
+  body,
+  html {
+    font-size: 8px;
+  }
+  .section-subtitle {
+    max-width: 80%;
+  }
+  /* banner section */
+  .banner_section {
+    min-height: 70vh;
+  }
+  .banner_section .carousel-item {
+    height: 70vh;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* genarell css */
+  .about .banner_section,
+  .product .banner_section,
+  .gallery .banner_section,
+  .contact .banner_section {
+    padding-top: 12.5rem;
+    padding-bottom: 3rem;
+  }
+
+  /* navbar css */
+  .header .navbar {
+    background-size: cover;
+    padding: 2rem;
+  }
+  .header .navbar-nav {
+    margin-top: 2rem;
+  }
+  .header .navbar-nav .nav-link {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .header .header_right span {
+    padding: 0.2rem 0.5rem;
+  }
+}

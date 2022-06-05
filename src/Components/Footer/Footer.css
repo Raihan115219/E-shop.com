@@ -1,0 +1,84 @@
+.footer-wrapper {
+  background: url("../../Assest/images/footer-bg/footer_bg.png");
+  background-position: top center;
+  padding-top: 15rem;
+  padding-bottom: 0;
+}
+.footer-wrapper h5 {
+  color: var(--text-white);
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+.footer-wrapper ul li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+.footer-wrapper .company-details {
+  font-size: 1.4rem;
+}
+.footer-wrapper .contact-info li a {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+}
+.footer-wrapper .link-widget li a,
+.footer-wrapper p {
+  color: var(--text-gray);
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+}
+.footer-wrapper .link-widget li a:before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  left: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-wrapper .link-widget li a:hover {
+  margin-left: 0.625rem;
+  color: var(--secondary-color);
+}
+.footer-wrapper .social-network a {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.2rem;
+  margin: 0.5rem;
+  display: inline-block;
+  border: 0.125rem solid var(--text-gray);
+  color: var(--text-gray);
+  text-align: center;
+  border-radius: 100%;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 1.2rem;
+}
+.footer-wrapper .social-network a:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-white);
+  box-shadow: 0.625rem 0.937rem 0 rgb(0 0 0 0 10%);
+  transform: translateY(-0.1875rem);
+}
+.footer-wrapper .form-control {
+  font-size: 2rem;
+  color: var(--text-white);
+}
+.footer-wrapper .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--secondary-color);
+}
+.footer-wrapper .copyright-section {
+  background-color: var(--secondary-color);
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer-wrapper .copyright-section p {
+  margin-top: 0;
+  padding: 3rem 0;
+  line-height: 0;
+  color: var(--primary-text);
+  font-weight: 600;
+}
